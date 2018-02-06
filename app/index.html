@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>ABZ-test</title>
+      <meta http-equiv="content-language" content="ru">
+      <meta name="description" content="">
+      <meta name="keywords" content="ABZ-test">
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="ABZ-test" />
+      <meta property="og:type" content="" />
+      <meta property="og:image" content="img/title.jpg" />
+      <meta property="og:description" content="Тест" />
+      <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="favicon.png" type="image/png">
+      <!-- <link href="css/fonts.css" rel="stylesheet" type="text/css"> -->
+      <link href="css/fonts.css" rel="stylesheet" type="text/css">
+      <link href="css/libs.min.css" rel="stylesheet" type="text/css">
+      <link href="css/main.css" rel="stylesheet" type="text/css">
+      <script src="js/libs.min.js"></script>
+      <script src="js/main.js"></script>
+   </head>
+   <body>
+      <header class="test">
+         <div class="wrapper">
+            <div class="wrapper_head">
+               <div class="wrapper_head__logo">
+                  <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                  
+               </div>
+               <div class="wrapper_head__search">
+                  <form name="searchform">
+                     <input type="text" name="search" class="pole" placeholder="Company Name">
+                  </form>
+               </div>
+               <div class="wrapper_head__alarm">
+                  <span class="icon message">
+                     <svg xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.998 19.006s-2.7.01-5.014.01c.01.959.008 2.472-.013 2.61-.04.259-.684.51-.958.292-.697-.578-1.015-1.197-2.077-2.912h-4.938c-.827 0-.985-.321-.985-1.153v-.867c.242.01 1.033.028 1.033.028l-.034.977 5.923.011 1.063 2v-1.994h6V9.021h-6.02v-.984H24.5c.827 0 1.497.331 1.497 1.163v8.654c0 .832-.172 1.152-.999 1.152zm-13.985-2.025H9.404c-.692.61-1.972 1.731-2.668 2.308-.275.219-.888-.032-.928-.291-.021-.138-.023-1.058-.013-2.017H1.123c-.827 0-1.122-.3-1.122-1.132V1.101C0 .269.139 0 .966 0h16.982c.827 0 1.029.238 1.029 1.069v14.156c0 .832-.764 1.756-1.591 1.756h-6.373v.005c-.084-.003-.103-.005 0-.005zm6.94-1l.034-14.954-16.986.01v14.944h5.945l.012 1.96 2.02-1.96h8.975zM4.654 11.585v-.043c0-.284.229-.545.511-.545h9.065c.282 0 .511.279.511.563v.025c0 .284-.229.443-.511.443H5.166c-.283 0-.512-.159-.512-.443zm7.33-5.55H5.166c-.282 0-.511-.159-.511-.443v-.044c0-.284.229-.545.511-.545h6.819c.282 0 .511.279.511.563v.025c0 .284-.229.444-.512.444zm-6.818 1.98h4.573c.282 0 .511.248.511.532v.025c0 .284-.229.443-.511.443H5.166c-.282 0-.511-.159-.511-.443v-.043a.512.512 0 0 1 .511-.514z"/></svg>
+                  </span>
+                  <span class="icon alarm">
+                     <svg xmlns="http://www.w3.org/2000/svg" ><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFF" d="M23.919 20.673a.7.7 0 0 1-.642.375H.733a.697.697 0 0 1-.642-.375C.025 20.558 0 20.296 0 20.179c0-.142.055-.27.144-.401a16.342 16.342 0 0 0 2.108-4.37c.479-1.54 1.363-3.505 1.744-6.413.221-1.693.468-3.385 1.241-4.303a7.454 7.454 0 0 1 1.335-1.241c1.007-.726 1.82-1.06 2.763-1.332.13-.607.445-1.112.942-1.512A2.677 2.677 0 0 1 11.993 0c.654 0 1.228.21 1.728.608.508.404.825.905.956 1.512a8.248 8.248 0 0 1 2.75 1.332c.507.366.948.781 1.335 1.241.779.924 1.481 2.353 1.702 4.047.381 2.908.806 5.134 1.283 6.67.479 1.541 1.183 3.162 2.121 4.527a.666.666 0 0 1 .131.388.851.851 0 0 1-.08.348zm-3.757-5.587c-.419-1.564-.8-3.619-1.152-6.166-.198-1.435-.765-2.633-1.44-3.413a6.055 6.055 0 0 0-1.166-1.021c-.88-.603-1.665-.881-2.566-1.099a.717.717 0 0 1-.563-.685v-.026c0-.685-.563-1.241-1.283-1.241-.694 0-1.283.555-1.283 1.241v.026a.69.69 0 0 1-.537.685c-.905.2-1.677.508-2.58 1.099-1.27.832-2.287 2.222-2.604 4.434-.364 2.545-.739 4.613-1.151 6.179-.412 1.563-1.056 3.566-1.841 4.897h20c-.787-1.344-1.415-3.346-1.834-4.91zm-6.658 8.285a2.015 2.015 0 0 1-1.502.631 2.077 2.077 0 0 1-1.516-.631 2.01 2.01 0 0 1-.626-1.483h4.269c.001.576-.215 1.064-.625 1.483z"/></svg>
+                  </span>
+               </div>
+               <div class="wrapper_head__profile">
+                  <div class="ava">
+                     <div class="photo">
+                        <img src="img/ava.png" alt="">
+                     </div>
+                        <p class="prof_name">Maximillian Beekeeper</p>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="main">
+         <div class="wrapper">
+            <div class="blocks">
+               <div class="sidebar_left">
+                  <div class="sidebar_left__menu">
+                     <ul>
+                        <li><a href="#">Feed</a></li>
+                        <li><a href="#">Ask a Colleague</a></li>
+                        <li><a href="#">Companies</a></li>
+                        <li><a href="#">Service Directory</a></li>
+                     </ul>
+                  </div>
+                  <div class="advertisement">
+                     <div class="title">
+                        <h3>Advertisement</h3>
+                     </div>
+                     <div class="add">
+                        <img src="img/add.png" alt="add">
+                        <a href="#">Ads By Denteez.com</a>
+                     </div>
+                  </div>
+                  <div class="featured">
+                     <div class="title">
+                        <h3>Featured Companies</h3>
+                        <a href="#">See All</a>
+                     </div>
+                     <div class="companies">
+                        <div class="item">
+                           <div class="item__content">
+                              <div class="photo"><img src="img/company.png" alt="company"></div>
+                              <div class="descr">
+                                 <h2>Company Name</h2>
+                                 <p class="who">Service Provider</p>
+                                 <p class="where">New York, USA</p>
+                                 <a href="#">Follow Now</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="item__content">
+                              <div class="photo"><img src="img/company.png" alt="company"></div>
+                              <div class="descr">
+                                 <h2>Company Name</h2>
+                                 <p class="who">Service Provider</p>
+                                 <p class="where">New York, USA</p>
+                                 <a href="#">Follow Now</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="item__content">
+                              <div class="photo"><img src="img/company.png" alt="company"></div>
+                              <div class="descr">
+                                 <h2>Company Name</h2>
+                                 <p class="who">Service Provider</p>
+                                 <p class="where">New York, USA</p>
+                                 <a href="#">Follow Now</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="copyright">
+                     <div class="title">
+                        <p>Denteez Copyright 2015</p>
+                     </div>
+                     <div class="private">
+                        <a href="#">Terms of use</a>
+                        <a href="#">Privacy Policy</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="middle_blocks">
+                  <div class="middle_title">
+                     <h2>Service Directory</h2>
+                     <a href="#" class="add_new">Add New Service</a>
+                  </div>
+                  <div class="middle_items">
+                     
+                     
+                  </div>
+               </div>
+               <div class="sidebar_right">
+                  <div class="people">
+                     <div class="title">
+                        <h3>People you may know</h3>
+                        <a href="#">See All</a>
+                     </div>
+                     <div class="peoples">
+                        <div class="item">
+                           <h2>Danielle Salazar</h2>
+                           <div class="item__content">
+                              <div class="photo"><img src="img/prof.png" alt="prof"></div>
+                              <div class="descr">
+                                 <p class="who">Dentist (Practice Owner)</p>
+                                 <p class="where">London, England</p>
+                                 <a href="#">Add Friend</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <h2>Danielle Salazar</h2>
+                           <div class="item__content">
+                              <div class="photo"><img src="img/prof.png" alt="prof"></div>
+                              <div class="descr">
+                                 <p class="who">Dentist (Practice Owner)</p>
+                                 <p class="where">London, England</p>
+                                 <a href="#">Add Friend</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <h2>Danielle Salazar</h2>
+                           <div class="item__content">
+                              <div class="photo"><img src="img/prof.png" alt="prof"></div>
+                              <div class="descr">
+                                 <p class="who">Dentist (Practice Owner)</p>
+                                 <p class="where">London, England</p>
+                                 <a href="#">Add Friend</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="featuredp">
+                     <div class="title">
+                        <h3>Featured Products</h3>
+                        <a href="#">See All</a>
+                     </div>
+                     <div class="products">
+                        <div class="item">
+                           <h2>Product Name</h2>
+                           <div class="item__content">
+                              <div class="photo"><img src="img/dan.png" alt="dan"></div>
+                              <div class="descr">
+                                 <p class="p_descr">Product Short</p> 
+                                 <p class="p_descr">Description.</p> 
+                                 <p class="p_descr">The quick brown 
+                                    fox jumps over the 
+                                    lazy dog.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <h2>Product Name</h2>
+                           <div class="item__content">
+                              <div class="photo"><img src="img/dan.png" alt="dan"></div>
+                              <div class="descr">
+                                 <p class="p_descr">Product Short</p> 
+                                 <p class="p_descr">Description.</p> 
+                                 <p class="p_descr">The quick brown 
+                                    fox jumps over the 
+                                    lazy dog.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="advertisement">
+                     <div class="title">
+                        <h3>Advertisement</h3>
+                     </div>
+                     <div class="add">
+                        <img src="img/add2.jpg" alt="add">
+                        <a href="#">Ads By Denteez.com</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- modal errors -->
+      <div id="modal" class="modal_div">
+            <span class="modal_close">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 96 96" enable-background="new 0 0 96 96" xml:space="preserve">
+<polygon fill="black" points="96,14 82,0 48,34 14,0 0,14 34,48 0,82 14,96 48,62 82,96 96,82 62,48 "/>
+</svg>
+</span>
+            <div class="error">
+
+            </div>
+      </div>
+      <div id="overlay"></div>
+
+   </body>
+</html>

@@ -1,0 +1,651 @@
+$font-stack: 'Proxima Nova', sans-serif
+
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	background-position: center
+	background-repeat: no-repeat
+
+h1,h2,h3,h4,h5 
+	font-weight: inherit
+	text-align: left
+	font-family: $font-stack
+	margin: 0
+	line-height: 1
+
+html 
+	font-size: 10px
+	-webkit-transition: .15s
+	-o-transition: .15s
+	transition: .15s
+
+
+body 
+	font-family: $font-stack
+	font-weight: normal
+	font-size: 1.6rem
+	background-color: #fff
+	color: #000
+	font-weight: 400
+	width: 100%
+	position: relative
+
+a 
+	text-decoration: none
+	color: inherit
+	outline: none !important
+
+button,input,textarea 
+	outline: none
+
+section,footer,header 
+	width: 100%
+	position: relative
+
+// СТИЛИ ДЛЯ test_service_directory.psd
+
+.test
+	background-color: #87b448
+	border-bottom: .2rem solid #71973c
+// Хедер
+.wrapper
+	max-width: 1440px
+	// max-width: 970px
+	min-width: 970px
+	position: relative
+	z-index: 2
+	padding: 0 1.5rem
+	height: 100%
+	margin: 0 auto
+
+	&_head
+		padding-top: 1.2rem
+		padding-bottom: 1.5rem
+		display: grid
+		grid-template-columns: 16.2rem 1fr 9.5rem minmax(10rem, min-content)
+		align-items: center
+		&__logo
+			height: 3.9rem
+			& a
+				display: inline-block
+				height: 100%
+		&__search
+			align-self: end
+			padding-right: 2rem
+			& .pole
+				background-color: #73993d
+				outline: none
+				font-family: $font-stack
+				color: #ffffff
+				border: none
+				width: 100%
+				min-width: 43.5rem
+				padding: .8rem 2rem .8rem 3.8rem
+				border-radius: .3rem
+				text-overflow: ellipsis
+				background-image: url(../img/search.svg)
+				background-size: 16px
+				background-position: 10px center
+				background-repeat: no-repeat
+				&::-webkit-input-placeholder 
+					color: #8FBC4C
+				&::-moz-placeholder          
+					color: #8FBC4C
+				&:-moz-placeholder           
+					color: #8FBC4C
+				&:-ms-input-placeholder      
+					color: #8FBC4C
+				&:focus
+					background-color: #fff
+					color: #000
+		&__alarm
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: space-between
+			padding-left: 1rem
+			padding-right: 1.5rem
+			margin-top: .7rem
+			& .icon
+				cursor: pointer
+				display: block
+				width: 2.6rem
+				height: 2.6rem
+				& svg
+					width: 2.6rem
+					height: 2.6rem
+					& path
+						fill: #fff
+				&:hover
+					& svg path
+						fill: #CAD862
+		&__profile
+
+			& .ava
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: flex-start
+				cursor: pointer
+				margin-top: .7rem
+				& .photo
+					width: 3.2rem
+					height: 3.2rem
+			& .prof_name
+				color: #fefefe
+				max-width: 17rem
+				font-size: 1.6rem
+				margin-left: 1.1rem
+				text-overflow: ellipsis
+				white-space: nowrap
+
+				overflow: hidden
+// сетка
+.blocks
+	display: grid
+	grid-template-columns: 21rem 1fr 21.5rem
+	grid-gap: 1.5rem
+	padding-bottom: 5rem
+
+// Сайдбары
+.sidebar_left
+	& .featured
+		border-bottom: 0.1rem solid #e0e2e6
+		padding-bottom: 1.5rem
+	& .advertisement
+		border-bottom: 0.1rem solid #e0e2e6
+		padding-bottom: 1.5rem
+	&__menu
+		& ul
+			list-style: none
+			& li
+				border-bottom: .1rem solid rgb(224, 226, 230)
+				& a
+					color: rgba(89, 96, 107, 1)
+					font-size: 1.6rem
+					display: inline-block
+					width: 100%
+					padding: 1.6rem 0 1.6rem 5rem
+					&:hover
+						color: #87B446
+				&:nth-child(1)
+					& a
+						background: url(../img/menu/feed.svg) no-repeat center left 0
+						&:hover
+							background: url(../img/menu/feed-hover.svg) no-repeat center left 0
+				&:nth-child(2)
+					& a
+						background: url(../img/menu/ask.svg) no-repeat center left .1rem
+						&:hover
+							background: url(../img/menu/ask-hover.svg) no-repeat center left .1rem
+				&:nth-child(3)
+					& a
+						background: url(../img/menu/companies.svg) no-repeat center left .3rem
+						&:hover
+							background: url(../img/menu/companies-hover.svg) no-repeat center left .3rem
+				&:nth-child(4)
+					& a
+						background: url(../img/menu/services.svg) no-repeat center left .4rem
+						&:hover
+							background: url(../img/menu/services-hover.svg) no-repeat center left .4rem
+.sidebar_right
+	& .featuredp
+		border-bottom: 0.1rem solid #e0e2e6
+		padding-bottom: 1.5rem
+	& .people
+		border-bottom: 0.1rem solid #e0e2e6
+		padding-bottom: 1.5rem
+
+// Заголовки
+.title
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+	padding-top: 1.8rem
+	padding-bottom: 1.5rem
+	& h3
+		color: #7c8695
+		font-size: 1.4rem
+	& a
+		display: inline-block
+		color: #1c2534
+		font-size: 1.4rem
+	& p
+		color: #b7bfcd
+		font-size: 1.2rem
+		
+// блоки в сайдбарах
+.item
+	margin-bottom: 1.8rem
+	&:last-child
+		margin-bottom: 0
+	& h2
+		color: #1c2534
+		font-size: 1.6rem
+		margin-bottom: .5rem
+	&__content
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+		width: 100%
+		& img
+			border-radius: 0.5rem
+
+		& .descr
+			margin-left: 1rem
+		& p
+			color: #7c8695
+			font-size: 1.4rem
+			padding-right: 1rem
+			&.who
+				margin-bottom: .5rem
+		& a
+			font-size: 1.2rem
+			color: #1c2534
+			display: inline-block
+
+// реклама
+.add
+	& a
+		color: #d3d3d3
+		font-size: 1.1rem
+		display: inline-block
+
+// центральный блок
+.middle_blocks
+	padding-top: 1.2rem
+.middle_title
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+	& h2
+		color: #1c2534
+		font-size: 3rem
+	& .add_new
+		display: inline-block
+		border-radius: 0.5rem
+		padding: .7rem 2rem
+		background-color: #87b448
+		color: #ffffff
+		font-size: 1.4rem
+.middle_items
+	border-radius: 0.5rem
+	border: 0.1rem solid #e0e2e6
+	display: grid
+	width: 100%
+	grid-template-columns: repeat(auto-fill, 14rem)
+	justify-content: space-around
+	align-items: top
+	padding: 1.5rem
+	margin-top: 2rem
+	grid-gap: 1.5rem
+	grid-row-gap: 1.5rem
+	& .item_service
+		& h2
+			margin-top: 1.5rem
+			color: #1c2534
+			font-size: 1.4rem
+			text-align: center
+		& .pic
+			border: 0.1rem solid #e0e2e6
+			cursor: pointer
+			display: flex
+			flex-direction: row
+			align-items: center
+			height: 14rem
+			justify-content: center
+			& img
+				max-width: 14rem
+				width: 100%
+		&:hover
+			& .pic
+				background-color: #f4f7fb
+			& h2
+				color: #71973c
+			& img
+
+.private
+	& a
+		color: #b7bfcd
+		display: inline-block
+		font-size: 1.2rem
+
+
+// копирайт
+.copyright .title
+	padding-bottom: 1rem
+
+// модальные окна
+.modal_div 
+	max-width: 30rem
+	width: 100%
+	height: auto 
+	border-radius: .3rem
+	border: .1rem solid #e0e2e6
+	background: #fff
+	position: fixed 
+	top: 45%
+	left: 50% 
+	margin-top: -15rem
+	margin-left: -15rem 
+	display: none 
+	opacity: 0
+	z-index: 5
+	padding: 1.5rem 2rem 1.5rem 2rem
+	& .modal_close 
+		width: 1.5rem
+		height: 1.5rem
+		position: absolute
+		top: -2rem
+		right: -2rem
+		cursor: pointer
+		display: block
+		transition: .2s
+		& svg polygon
+				fill: #fff
+		&:hover
+			& svg polygon
+				fill: #87b448
+	& .error
+		& h2
+			text-align: center
+			margin-bottom: .5rem
+		& .err_p
+			margin-top: .5rem
+			color: #d3d3d3
+			font-size: 1.1rem
+// подложка
+#overlay 
+	z-index: 3 
+	position: fixed 
+	background-color: #000 
+	opacity: 0.8 
+	-moz-opacity: 0.8 
+	filter: alpha(opacity=80)
+	width: 100% 
+	height: 100% 
+	top: 0 
+	left: 0
+	cursor: pointer
+	display: none
+
+// СТИЛИ ДЛЯ test_service_directory.psd
+
+.wrapper_login
+	max-width: 1280px
+	width: 100%
+	// min-width: 970px
+	position: relative
+	z-index: 2
+	padding: 0 1.5rem
+	height: 100%
+	margin: 0 auto
+
+.login_head
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 3
+	& .wrapper_login__head
+		display: flex
+		flex-direction: row
+		width: 100%
+		justify-content: space-between
+		align-items: center
+		margin-top: 4rem
+		padding-left: 5rem
+		padding-right: 4rem
+		& .login
+			& a
+				display: inline-block
+				font-size: 1.4rem
+				color: #ffffff
+				font-weight: 400
+				border-radius: 0.5rem
+				padding: .7rem 2rem
+				background-color: #87b448
+
+.home
+	background: url(../img/sec1.jpg) no-repeat top center
+	background-size: cover
+	height: 51rem
+	z-index: 2
+	& .content
+		
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: center
+		width: 100%
+		height: 100%
+		&__text
+			max-width: 50rem
+			& h1
+				font-weight: 300
+				color: #f3f4f6
+				font-size: 4.8rem
+				margin-bottom: 1rem
+				text-align: center
+			& p
+				color: #f3f4f6
+				font-size: 2rem
+				font-weight: 300
+				line-height: 3rem
+				text-align: center
+
+.form_sect
+	background: url(../img/bg.jpg) no-repeat top center
+	background-size: cover
+	& .wrapper_login__form
+		width: 76rem
+		margin: 0 auto
+		& .sing_form
+			
+			-webkit-transform: translate(0px, -10rem)
+			transform: translate(0px, -10rem)
+			& .fields
+				background: #fff
+				border: 0.1rem solid #e0e2e6
+				border-radius: 0.5rem
+				padding: 2rem
+				& p
+					color: #c1c1c1
+					font-size: 1.6rem
+					font-weight: 400
+			& .add_photo
+				margin-top: 1.4rem
+				display: grid
+				grid-template-columns: repeat(auto-fill, 13rem)
+				justify-content: space-between
+				align-items: top
+				& .add_block
+					width: 13rem
+					height: 13rem
+					border: 0.1rem solid #c8cdd5
+					background-color: #f7f7f7
+					border-radius: 0.4rem
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					cursor: pointer
+					position: relative
+
+					
+					&:hover
+						background: #f4f7fb
+						& p
+							color: #87B446
+					& p
+						padding: 0 1rem
+						text-align: center
+						font-size: 1.6rem
+						color: #7c8695
+						font-weight: 400
+						&:last-child
+							margin-top: .5rem
+							font-size: 1.2rem
+							color: #c2c2c4
+					& .photo
+						position: absolute 
+						left: 0
+						bottom: 0
+						font-size: 1px
+						opacity: 0
+						filter: alpha(opacity=0)
+						margin: 0
+						padding: 0
+						border: none
+						width: 100%
+						height: 100%
+						cursor: pointer
+					& .change
+						&.active
+							object-fit: cover
+							width: 100%
+							height: 100%
+							border-radius: 0.4rem
+
+			& .sub_btn
+				outline: none
+				border-radius: 0.5rem
+				background-color: #87b448
+				width: 100%
+				color: #ffffff
+				font-family: $font-stack
+				font-size: 1.6rem
+				font-weight: 400
+				border: none
+				padding-top: 1.7rem
+				padding-bottom: 1.7rem
+				cursor: pointer
+				margin-top: 2rem
+				&:disabled
+					opacity: .5
+			& .pole_f
+				border-radius: 0.5rem
+				background-color: #ffffff
+				border: 0.1rem solid #c8cdd5
+				font-family: $font-stack
+				font-size: 1.6rem
+				color: #010101
+				padding: 1.6rem 2rem 1.6rem 2rem
+				text-overflow: ellipsis
+				width: 100%
+				outline: none
+				position: relative
+				transition: .2s
+				&.add_pole
+					margin-top: 2rem
+					display: none
+				&.error
+					border: 0.1rem solid #fb6363
+				&.select_pole
+					cursor: pointer
+					position: relative
+					background: url(../img/arrow.png) no-repeat center right 2rem, #fff
+			& .select_emulate
+				position: relative
+				& .dropdown
+					display: none
+					position: absolute
+					top: 100%
+					left: 0
+					border-radius: 0.5rem
+					border: 0.1rem solid #c8cdd5
+					background-color: #ffffff
+					width: 100%
+					z-index: 5
+					&.active
+						display: block
+					& ul
+						list-style: none
+						
+						& li
+							padding: 2rem
+							cursor: pointer
+							z-index: 3
+							border-radius: 0.5rem
+							&:hover
+								background: #f4f7fb
+								color: #87B446
+								font-size: 1.6rem
+			& .text_a
+				resize: none
+				overflow-x: hidden
+				
+			& label
+				display: block
+				color: #1c2534
+				font-size: 1.6rem
+				font-weight: 400
+				margin-bottom: .4rem
+			& .row_form
+				margin-top: 1.5rem
+				& .fl_row
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					& .del
+						width: 48%
+						// &:
+
+
+
+.about
+	padding-top: 9.9rem
+	padding-bottom: 11.2rem
+	border-top: .1rem solid #e0e2e6
+	background: #fff
+	& .title_login
+		& h2
+			font-weight: 300
+			font-size: 3rem
+			color: #1c2534
+			text-align: center
+			width: 100%
+	& .aboutus
+		margin-top: 5rem
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+		& p
+			max-width: 63rem
+			text-align: left
+			color: #7c8695
+			font-size: 1.6rem
+			font-weight: 300
+			line-height: 2.4rem
+		& .left_a
+			& p
+				padding-right: 3rem
+		& .right_a
+			& p
+				padding-left: 3rem
+
+footer
+	border-top: .1rem solid #e0e2e6
+	background: #fff
+	padding-top: 3.4rem
+	padding-bottom: 2.9rem
+	& .foot
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+		& p
+			font-size: 1.2rem
+			color: #b7bfcd
+			font-weight: 400
+		& a
+			font-size: 1.2rem
+			color: #b7bfcd
+			font-weight: 400
+			display: inline-block
+			margin-left: 2rem
