@@ -33,7 +33,7 @@ $(document).ready(function($) {
                     $.each(arr,function(key, value){
                         $(".middle_items").append('<div class="item_service">'+
                                 '<div class="pic">'+
-                                    '<img src="'+value.icon+'" alt="">'+
+                                    '<img src="http:'+value.icon+'" alt="">'+
                                 '</div>'+
                                 '<h2>'+value.title+'</h2>'+
                             '</div>');
